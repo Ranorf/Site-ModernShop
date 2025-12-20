@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModernShop — мінімалізм та технології</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient--one"></div>
+  <div class="ambient ambient--two"></div>
+  <div class="ambient ambient--three"></div>
+
+  <header class="shell">
+    <div class="brand">ModernShop</div>
+    <nav class="nav">
+      <a href="#features">Переваги</a>
+      <a href="#products">Колекція</a>
+      <a href="#cta">Доставка</a>
+    </nav>
+    <button class="ghost-btn">UA</button>
+  </header>
+
+  <main class="shell">
+    <section class="hero card reveal">
+      <div>
+        <p class="eyebrow">Кібер естетика</p>
+        <h1>Мінімалістичний маркетплейс з характером</h1>
+        <p class="lede">ModernShop поєднує темні відтінки та яскравий пурпур, щоб виділити ваші продукти. Анімації підкреслюють рух та технологічність.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#products">Переглянути колекцію</a>
+          <a class="secondary" href="#features">Дізнатися більше</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb"></div>
+        <div class="ring"></div>
+        <div class="glow-tag">Готово до запуску</div>
+      </div>
+    </section>
+
+    <section id="features" class="grid">
+      <article class="mini-card reveal">
+        <p class="eyebrow">Сервіс</p>
+        <h3>Швидка доставка</h3>
+        <p>Оптимізовані логістичні партнери по всій Україні. Розумний трекінг в режимі реального часу.</p>
+      </article>
+      <article class="mini-card reveal">
+        <p class="eyebrow">Оплата</p>
+        <h3>Безпечні транзакції</h3>
+        <p>Підтримка Apple Pay, Google Pay та банківських карток з миттєвим підтвердженням.</p>
+      </article>
+      <article class="mini-card reveal">
+        <p class="eyebrow">Дизайн</p>
+        <h3>Чистий інтерфейс</h3>
+        <p>Фокус на продукт: темний фон, неонова акцентна палітра та плавні переходи.</p>
+      </article>
+    </section>
+
+    <section id="products" class="card reveal">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Колекція</p>
+          <h2>Підбірка для міського ритму</h2>
+          <p class="lede">Трендові товари з лаконічною формою та глибокими кольорами. Зібрані, щоб підкреслити стиль і функціональність.</p>
+        </div>
+        <button class="ghost-btn">Фільтри</button>
+      </div>
+      <div class="products" id="product-grid"></div>
+    </section>
+
+    <section id="cta" class="cta card reveal">
+      <div>
+        <p class="eyebrow">Підтримка 24/7</p>
+        <h2>Запускайте ModernShop з нашим API</h2>
+        <p class="lede">Підключайте бекенд на Python із FastAPI та базою даних на SQLAlchemy. Отримуйте каталоги, кошик, оплати та аналітику через єдиний інтерфейс.</p>
+        <div class="hero-actions">
+          <a class="primary" href="mailto:support@modernshop.ua">Написати нам</a>
+          <a class="secondary" href="#products">Додати товари</a>
+        </div>
+      </div>
+      <div class="cta-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <div>ModernShop © 2024</div>
+    <div class="footer-links">
+      <a href="#">Умови</a>
+      <a href="#">Політика</a>
+      <a href="#">Контакти</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
