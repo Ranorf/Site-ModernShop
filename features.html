@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Возможности</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Features</p>
+      <h1>Возможности Xenon</h1>
+      <p class="subtitle">Тонкие настройки, чистый интерфейс, продуманная безопасность и стабильные обновления.</p>
+    </section>
+
+    <section class="section">
+      <div class="bento features__grid">
+        <div class="card card--tall">
+          <div class="badge badge--new">Performance</div>
+          <h3>Performance Boost</h3>
+          <p>Профили CPU/GPU, динамический FPS и низкий input lag.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Control</div>
+          <h3>Гибкие настройки</h3>
+          <p>Быстро переключайте пресеты под игры и автоматизацию.</p>
+        </div>
+        <div class="card card--wide">
+          <div class="badge badge--stable">Launch</div>
+          <h3>Улучшенный запуск</h3>
+          <p>Детектор конфликтов драйверов и восстановление после сбоев.</p>
+        </div>
+        <div class="card">
+          <div class="badge badge--purple">Minimal</div>
+          <h3>Чистый интерфейс</h3>
+          <p>Без рекламы и лишних сервисов, только нужные панели.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Cache</div>
+          <h3>Контроль кеша</h3>
+          <p>Быстрая очистка, перенос и ограничение кеша игр.</p>
+        </div>
+        <div class="card">
+          <div class="badge badge--stable">Security</div>
+          <h3>Безопасные обновления</h3>
+          <p>Подписи, SHA-256 и mirror-файлы с одинаковыми хэшами.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

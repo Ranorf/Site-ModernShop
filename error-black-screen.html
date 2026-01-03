@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Screen on Launch — Xenon Fix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main class="doc-layout">
+    <section class="doc-hero">
+      <div class="doc-hero__glow"></div>
+      <div>
+        <p class="pill">Launch · Easy</p>
+        <h1>Black Screen on Launch</h1>
+        <div class="doc-meta">
+          <span class="chip">TL;DR: Отключите оверлеи и проверьте GPU драйвер</span>
+          <span class="chip">Канал: Stable/Beta</span>
+        </div>
+        <div class="row" style="margin-top:12px;">
+          <button class="btn btn-ghost interactive">Like</button>
+          <button class="btn btn-ghost interactive">Bookmark</button>
+          <button class="btn btn-primary interactive">Share</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-body">
+      <article class="doc-content">
+        <h2>Коротко</h2>
+        <p>После запуска окно Xenon остаётся чёрным, интерфейс не появляется. Чаще всего причина в оверлеях/захватах или конфликте рендера.</p>
+
+        <h2>Почему это происходит</h2>
+        <p>GPU блокирует слой рендера, активные оверлеи перехватывают окно, либо драйверы устарели/повреждены.</p>
+
+        <h2>Пошаговое решение</h2>
+        <ol>
+          <li>Закройте Discord/Steam/GeForce Experience оверлеи.</li>
+          <li>Переключите Renderer в Xenon на Vulkan или DX11 и перезапустите.</li>
+          <li>Обновите драйверы GPU (NVIDIA/AMD/Intel) и перезагрузите ПК.</li>
+          <li>Запустите Xenon от имени администратора.</li>
+          <li>Отключите Hyper-V/WSL2 или включите режим совместимости в настройках Xenon.</li>
+          <li>Очистите кеш Xenon и перезапустите.</li>
+        </ol>
+
+        <h2>Если не помогло</h2>
+        <ul>
+          <li>Временно выключите антивирус/фаервол и попробуйте снова.</li>
+          <li>Проверьте целостность файлов (SHA-256) и переустановите.</li>
+          <li>Попробуйте portable-версию для диагностики.</li>
+        </ul>
+
+        <div class="quick-actions">
+          <a class="btn btn-primary interactive" href="download.html">Скачать Xenon</a>
+          <a class="btn btn-ghost interactive" href="docs-troubleshooting.html">Открыть Docs</a>
+          <a class="btn btn-ghost interactive" href="tools.html">Запустить диагностику</a>
+        </div>
+
+        <h3>Связанные проблемы</h3>
+        <ul>
+          <li><a class="interactive" href="error-vtx.html">VT-x disabled</a></li>
+          <li><a class="interactive" href="error-hyperv.html">Hyper-V conflict</a></li>
+          <li><a class="interactive" href="error-black-screen.html">Failed to start 0xc000</a></li>
+        </ul>
+      </article>
+
+      <aside class="doc-toc">
+        <h4>Следующая популярная</h4>
+        <ul>
+          <li><a class="interactive" href="error-vtx.html">VT-x disabled</a></li>
+        </ul>
+        <h4>Фильтры</h4>
+        <ul>
+          <li>Категория: Launch</li>
+          <li>Уровень: Easy</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

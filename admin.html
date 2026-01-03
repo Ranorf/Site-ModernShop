@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-auth="signed-in">
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Admin</p>
+      <h1>Админ-панель Xenon</h1>
+      <p class="subtitle">Управление релизами, файлами, контентом и пользователями. Доступно для ролей admin/editor.</p>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <div class="list-card">
+          <h3>Релизы и файлы</h3>
+          <ul>
+            <li>Создать/редактировать релиз</li>
+            <li>Загрузить файлы, добавить хэши и подписи</li>
+            <li>Опубликовать или скрыть сборку</li>
+          </ul>
+          <a class="btn btn-primary interactive" href="releases.html">К списку релизов</a>
+        </div>
+        <div class="list-card">
+          <h3>Контент</h3>
+          <ul>
+            <li>Docs/FAQ/pages обновления</li>
+            <li>Changelog и релиз-ноты</li>
+            <li>Статус сервисов</li>
+          </ul>
+          <a class="btn btn-ghost interactive" href="docs.html">Редактировать docs</a>
+        </div>
+        <div class="list-card">
+          <h3>Пользователи и отзывы</h3>
+          <ul>
+            <li>Модерация отзывов и комментариев</li>
+            <li>Управление ролями (admin only)</li>
+            <li>Просмотр подписчиков/рассылок</li>
+          </ul>
+          <a class="interactive" href="reviews.html">Модерировать отзывы</a>
+        </div>
+        <div class="list-card">
+          <h3>Статистика загрузок</h3>
+          <p>Скачать отчёт по download_events: страны, рефереры, популярные файлы.</p>
+          <a class="interactive" href="status.html">Статус CDN</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Тема форума</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Topic</p>
+      <h1>Чёрный экран после установки</h1>
+      <div class="doc-meta">
+        <span class="chip">Категория: Help & Troubleshooting</span>
+        <span class="chip">Теги: bug, launch, hyper-v</span>
+        <span class="chip">Версия: 1.4.2</span>
+        <span class="chip">Просмотры: 1.2k</span>
+      </div>
+      <div class="row" style="margin-top:12px;">
+        <button class="btn btn-ghost interactive">Reply</button>
+        <button class="btn btn-ghost interactive">Quote</button>
+        <button class="btn btn-primary interactive">Отметить решено</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="list-card">
+        <div class="row">
+          <div class="comment__avatar"></div>
+          <strong>Iris</strong>
+          <span class="pill-muted">12.04.2026</span>
+        </div>
+        <p>После установки 1.4.2 окно остаётся чёрным. Hyper-V выключен, драйверы свежие.</p>
+      </div>
+
+      <div class="comments">
+        <div class="comment">
+          <div class="comment__avatar"></div>
+          <div class="comment__body">
+            <div class="row">
+              <strong>Dima</strong>
+              <span class="pill-muted">12.04.2026</span>
+            </div>
+            <p>Попробуйте отключить оверлеи и переключить renderer на Vulkan. Также проверьте SHA-256.</p>
+            <div class="row comment__actions">
+              <button class="btn btn-ghost interactive">Reply</button>
+              <button class="btn btn-ghost interactive">Quote</button>
+            </div>
+          </div>
+        </div>
+        <div class="comment comment--reply">
+          <div class="comment__avatar"></div>
+          <div class="comment__body">
+            <div class="row">
+              <strong>Iris</strong>
+              <span class="pill-muted">12.04.2026</span>
+            </div>
+            <p>Переключение на Vulkan помогло, спасибо!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-card" style="margin-top:12px;">
+        <h3>Ответить</h3>
+        <textarea rows="4" placeholder="Ваш ответ (жирный, списки, код — по желанию)"></textarea>
+        <button class="btn btn-primary interactive" type="button">Отправить</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

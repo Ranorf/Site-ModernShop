@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">FAQ</p>
+      <h1>Ответы на частые вопросы</h1>
+      <p class="subtitle">Установка, обновления, совместимость и безопасность Xenon. Используйте поиск, чтобы найти нужный пункт.</p>
+      <input id="faq-search" class="list-card" type="search" placeholder="Поиск по FAQ" style="margin-top:18px; width:100%; border:none;">
+    </section>
+
+    <section class="section">
+      <div class="accordion">
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Как установить Xenon?</span>
+          <span class="icon">+</span>
+          <p>Скачайте установщик, проверьте подпись, отключите Hyper-V и следуйте мастеру.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Чем отличаются Stable/Beta/Nightly?</span>
+          <span class="icon">+</span>
+          <p>Stable — проверенные сборки, Beta — тест новых функций, Nightly — ежедневные изменения.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Есть ли portable?</span>
+          <span class="icon">+</span>
+          <p>Да, portable zip публикуется вместе с каждым релизом.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Как проверить хэш?</span>
+          <span class="icon">+</span>
+          <p>Сравните SHA-256 из страницы загрузки с выводом вашей утилиты (certutil / shasum).</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Работает ли с Hyper-V?</span>
+          <span class="icon">+</span>
+          <p>Рекомендуется отключить Hyper-V, либо включить совместимость в настройках Xenon.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Как обновляться?</span>
+          <span class="icon">+</span>
+          <p>Скачайте новую версию и установите поверх, профили сохранятся.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Где смотреть релиз-ноты?</span>
+          <span class="icon">+</span>
+          <p>В разделе Releases или на странице конкретного релиза.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Есть ли телеметрия?</span>
+          <span class="icon">+</span>
+          <p>Нет, телеметрия отключена. Логи только локальные.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Поддерживается ли стриминг?</span>
+          <span class="icon">+</span>
+          <p>Да, рекомендуем 16 ГБ ОЗУ и GPU с NVENC/AMF.</p>
+        </button>
+        <button class="accordion__item faq-item interactive" aria-expanded="false">
+          <span>Куда писать о проблемах?</span>
+          <span class="icon">+</span>
+          <p>Откройте тикет в разделе Support или напишите на contact@xenon.dev.</p>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

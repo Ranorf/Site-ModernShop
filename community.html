@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Community</title>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://xenon-emulator.com/community.html">
+  <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Community</p>
+      <h1>Форум Xenon</h1>
+      <p class="subtitle">Обсуждения релизов, настроек и проблем. Делитесь пресетами и помогайте другим.</p>
+      <div class="row" style="margin-top:12px;">
+        <div class="errors-search__bar">
+          <input type="search" placeholder="Поиск по темам" aria-label="Поиск тем">
+          <button class="btn btn-primary interactive" type="button">Искать</button>
+        </div>
+        <a class="btn btn-primary interactive" href="community-new-topic.html">Создать тему</a>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section__header">
+        <p class="eyebrow">Закреплённые</p>
+        <h2>Pinned темы</h2>
+      </div>
+      <div class="grid two">
+        <div class="list-card list-card--glow">
+          <h3>FAQ: Hyper-V и совместимость</h3>
+          <p class="pill-muted">Help & Troubleshooting · 2д назад · 120 ответов</p>
+        </div>
+        <div class="list-card list-card--glow">
+          <h3>Лучшие пресеты для ноутбуков</h3>
+          <p class="pill-muted">Performance & Settings · 5д назад · 68 ответов</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Категории</p>
+        <h2>Основные разделы</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card list-card--glow">
+          <h3>Help & Troubleshooting</h3>
+          <p class="pill-muted">Ошибки, запуск, краши.</p>
+          <a class="interactive" href="community-category.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <h3>Performance & Settings</h3>
+          <p class="pill-muted">FPS, настройки, оптимизация.</p>
+          <a class="interactive" href="community-category.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <h3>Games & Apps</h3>
+          <p class="pill-muted">Игры и приложения на Xenon.</p>
+          <a class="interactive" href="community-category.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <h3>Releases & Feedback</h3>
+          <p class="pill-muted">Отзывы о версиях.</p>
+          <a class="interactive" href="community-category.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <h3>Guides & Presets</h3>
+          <p class="pill-muted">Гайды и пользовательские пресеты.</p>
+          <a class="interactive" href="community-category.html">Открыть</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

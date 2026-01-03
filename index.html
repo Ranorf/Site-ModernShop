@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — кастомный BlueStacks</title>
+    <meta name="description" content="Xenon — кастомный BlueStacks для Windows с оптимизированным рендером, чистым интерфейсом и безопасной установкой. Скачать stable/beta/nightly.">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="canonical" href="https://xenon-emulator.com/">
+    <meta property="og:title" content="Xenon — кастомный BlueStacks">
+    <meta property="og:description" content="Оптимизированный эмулятор Android: быстрый рендер, пресеты, безопасные релизы.">
+    <meta property="og:url" content="https://xenon-emulator.com/">
+    <meta property="og:type" content="website">
+    <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <div id="cursor-dot"></div>
+    <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-search interactive" id="nav-search-btn">
+        <span class="icon">🔍</span>
+      </button>
+      <div class="nav-search__panel" id="nav-search-panel">
+        <input type="search" placeholder="Искать в Docs / FAQ / Releases" aria-label="Поиск">
+      </div>
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+        <div class="auth auth-user">
+          <button class="user-toggle interactive" id="user-toggle">
+            <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+            <span>iris</span>
+          </button>
+          <div class="user-dropdown" id="user-dropdown">
+            <a class="interactive" href="profile.html">Profile</a>
+            <a class="interactive" href="bookmarks.html">Bookmarks</a>
+            <a class="interactive" href="download-history.html">Download history</a>
+            <a class="interactive" href="admin.html">Admin panel</a>
+            <a class="interactive" href="logout.html">Logout</a>
+          </div>
+        </div>
+        <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+      </div>
+      <div class="nav-mobile" id="nav-mobile">
+        <a class="interactive" href="download.html">Download</a>
+        <a class="interactive" href="releases.html">Releases</a>
+        <a class="interactive" href="requirements.html">Requirements</a>
+        <a class="interactive" href="docs.html">Docs</a>
+        <a class="interactive" href="faq.html">FAQ</a>
+        <a class="interactive" href="support.html">Support</a>
+        <a class="interactive" href="about.html">About</a>
+        <a class="interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+        <a class="interactive" href="profile.html">Profile</a>
+        <a class="interactive" href="download-history.html">Download history</a>
+        <a class="interactive" href="bookmarks.html">Bookmarks</a>
+        <a class="interactive" href="admin.html">Admin</a>
+      </div>
+    </header>
+
+  <main>
+    <section class="hero hero--premium" id="top">
+      <div class="hero__bg hero__bg--grid"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">Xenon · кастомный BlueStacks</p>
+        <h1>Быстрее. Чище. Точнее. Готов к скачиванию.</h1>
+        <p class="subtitle">Премиальный Android-эмулятор для геймеров и автоматизации: оптимизированный рендер, чистый интерфейс и безопасные обновления.</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary btn-large interactive" href="download.html">Скачать Xenon</a>
+          <a class="btn btn-ghost interactive" href="releases.html">Смотреть релизы</a>
+        </div>
+        <div class="hero__meta">
+          <span class="chip">Stable 1.4.2</span>
+          <span class="chip chip--purple">Performance tuned</span>
+          <span class="chip">Подпись Xenon Labs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="featured">
+      <div class="section__header">
+        <p class="eyebrow">Highlights</p>
+        <h2>Главные обновления</h2>
+      </div>
+      <div class="carousel">
+        <button class="carousel__control interactive" data-dir="prev">‹</button>
+        <div class="carousel__track" id="featured-track">
+          <div class="card card--feature">
+            <div class="badge badge--stable">Stable 1.4.2</div>
+            <h3>Подпись и input lag fix</h3>
+            <p>Оптимизированный ввод, подписанный установщик, обновлённый Vulkan стек.</p>
+            <a class="btn btn-ghost interactive" href="release-1.4.2.html">Open release</a>
+          </div>
+          <div class="card card--feature">
+            <div class="badge badge--new">Beta</div>
+            <h3>Performance patch</h3>
+            <p>Vulkan 2 пресеты, динамический FPS и обновлённый лайв-логгер.</p>
+            <a class="btn btn-ghost interactive" href="releases.html#beta">Open release</a>
+          </div>
+          <div class="card card--feature">
+            <div class="badge badge--purple">Installer</div>
+            <h3>Новый установщик</h3>
+            <p>Быстрый onboarding, автопроверка хэша и цифровая подпись.</p>
+            <a class="btn btn-ghost interactive" href="download.html">Open release</a>
+          </div>
+          <div class="card card--feature">
+            <div class="badge">Control Hub</div>
+            <h3>Гибкие профили</h3>
+            <p>Быстрый переключатель пресетов под MOBA, шутеры и автоматику.</p>
+            <a class="btn btn-ghost interactive" href="docs.html">Open release</a>
+          </div>
+          <div class="card card--feature">
+            <div class="badge badge--stable">Security</div>
+            <h3>Hash + Mirrors</h3>
+            <p>Зеркала с идентичными SHA-256, мониторинг целостности перед запуском.</p>
+            <a class="btn btn-ghost interactive" href="download.html">Open release</a>
+          </div>
+        </div>
+        <button class="carousel__control interactive" data-dir="next">›</button>
+        <div class="carousel__dots" id="featured-dots"></div>
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="section__header">
+        <p class="eyebrow">Популярно сейчас</p>
+        <h2>Популярные загрузки</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card list-card--glow">
+          <div class="row">
+            <span class="badge badge--stable">Stable</span>
+            <strong>1.4.2 · 420 МБ</strong>
+          </div>
+          <p>Обновлено 12 марта · 48k downloads</p>
+          <a class="btn btn-primary interactive" href="download.html">Скачать</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <div class="row">
+            <span class="badge badge--new">Beta</span>
+            <strong>1.5.0 Beta · 430 МБ</strong>
+          </div>
+          <p>Обновлено 4 апреля · 12k downloads</p>
+          <a class="btn btn-primary interactive" href="releases.html#beta">Скачать</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <div class="row">
+            <span class="badge badge--purple">Nightly</span>
+            <strong>1.6.0 Nightly · 440 МБ</strong>
+          </div>
+          <p>Обновлено 20 апреля · 6k downloads</p>
+          <a class="btn btn-primary interactive" href="releases.html#nightly">Скачать</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="section__header">
+        <p class="eyebrow">Quick start</p>
+        <h2>Быстрый старт</h2>
+      </div>
+      <div class="grid three">
+        <div class="card card--mini">
+          <div class="badge">Install</div>
+          <h3>Установка</h3>
+          <p>Скачайте Installer, проверьте подпись, следуйте мастеру.</p>
+          <a class="btn btn-ghost interactive" href="docs-install.html">Открыть гайд</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge badge--stable">Setup</div>
+          <h3>Настройка</h3>
+          <p>Оптимальные параметры CPU/GPU и пресеты под игры.</p>
+          <a class="btn btn-ghost interactive" href="docs.html">Открыть гайд</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge badge--new">Fix</div>
+          <h3>Решение проблем</h3>
+          <p>Hyper-V, драйверы, сеть — короткие шаги в troubleshooting.</p>
+          <a class="btn btn-ghost interactive" href="docs-troubleshooting.html">Открыть гайд</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section__header">
+        <p class="eyebrow">Tip of the Day</p>
+        <h2>Ежедневный совет по оптимизации</h2>
+      </div>
+      <div class="list-card list-card--glow">
+        <p><strong>FPS & Performance:</strong> Включите Vulkan и ограничьте FPS до 120, если ноутбук троттлит. Отключите оверлеи (Discord/Steam) перед запуском.</p>
+        <div class="row" style="margin-top:12px;">
+          <a class="btn btn-primary interactive" href="tips-theme.html">Открыть совет</a>
+          <a class="interactive" href="tips.html">Все советы →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section__header">
+        <p class="eyebrow">Что означает ошибка…</p>
+        <h2>Найдите решение по коду или симптому</h2>
+      </div>
+      <div class="errors-widget list-card list-card--glow">
+        <div class="errors-widget__search">
+          <input type="search" placeholder="Например: Hyper-V, VT-x, black screen, 0xc000..." aria-label="Поиск ошибки">
+          <button class="btn btn-primary interactive" type="button" onclick="window.location.href='errors.html'">Найти решение</button>
+        </div>
+        <p class="pill-muted" style="margin-top:8px;">Популярные: Hyper-V conflict, VT-x disabled, Black screen on launch, Failed to start.</p>
+        <a class="interactive" href="errors.html">Открыть энциклопедию ошибок →</a>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section__header">
+        <p class="eyebrow">Hot Discussions</p>
+        <h2>Обсуждения за 7 дней</h2>
+      </div>
+      <div class="list-card list-card--glow">
+        <ul class="hot-list">
+          <li><a class="interactive" href="community-topic.html">[Performance] FPS падает после обновления 1.5.0 Beta</a> <span class="pill-muted">34 ответов · 2ч назад</span></li>
+          <li><a class="interactive" href="community-topic.html">[Launch] Чёрный экран на RTX 40xx</a> <span class="pill-muted">18 ответов · 5ч назад</span></li>
+          <li><a class="interactive" href="community-topic.html">[Settings] Лучший пресет для Genshin</a> <span class="pill-muted">22 ответа · 1д назад</span></li>
+          <li><a class="interactive" href="community-topic.html">[Releases] Обратная связь по 1.4.2 Stable</a> <span class="pill-muted">15 ответов · 3ч назад</span></li>
+          <li><a class="interactive" href="community-topic.html">[Guides] Настройка Vulkan на ноутбуках</a> <span class="pill-muted">9 ответов · 6ч назад</span></li>
+        </ul>
+        <a class="btn btn-primary interactive" href="community.html" style="margin-top:10px;">Все обсуждения →</a>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section__header">
+        <p class="eyebrow">Возможности</p>
+        <h2>Сделано для стабильной скорости</h2>
+      </div>
+      <div class="bento features__grid">
+        <div class="card card--tall">
+          <div class="badge badge--new">NEW</div>
+          <h3>Performance Boost</h3>
+          <p>Оптимизированные профили CPU/GPU и низкий input lag.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Control</div>
+          <h3>Гибкие настройки</h3>
+          <p>Быстро переключайте пресеты и хоткеи.</p>
+        </div>
+        <div class="card card--wide">
+          <div class="badge badge--stable">STABLE</div>
+          <h3>Улучшенный запуск</h3>
+          <p>Детектор конфликтов драйверов и авто-восстановление.</p>
+        </div>
+        <div class="card">
+          <div class="badge badge--purple">Minimal</div>
+          <h3>Чистый интерфейс</h3>
+          <p>Без рекламы и лишних сервисов.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Cache</div>
+          <h3>Контроль кеша</h3>
+          <p>Быстрая очистка, перенос и лимиты.</p>
+        </div>
+        <div class="card">
+          <div class="badge badge--stable">Secure</div>
+          <h3>Безопасные обновления</h3>
+          <p>Подписи, SHA-256 и зеркала.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section requirements" id="requirements">
+      <div class="section__header">
+        <p class="eyebrow">Системные требования</p>
+        <h2>Windows 10/11 x64</h2>
+      </div>
+      <div class="requirements__grid">
+        <div class="req">
+          <span>Минимум</span>
+          <strong>4 ядра, 8 ГБ RAM, DX11/Vulkan GPU, 5 ГБ SSD</strong>
+        </div>
+        <div class="req">
+          <span>Рекомендовано</span>
+          <strong>6 ядер, 16 ГБ RAM, 10 ГБ SSD, NVENC/AMF</strong>
+        </div>
+      </div>
+      <div class="row" style="margin-top:16px;">
+        <a class="btn btn-primary interactive" href="requirements.html">Полные требования</a>
+      </div>
+    </section>
+
+    <section class="section" id="subscribe">
+      <div class="section__header">
+        <p class="eyebrow">Подписка</p>
+        <h2>Получай обновления Xenon на почту</h2>
+        <p class="subtitle">Stable / Beta / Nightly — выбирай, что отслеживать</p>
+      </div>
+      <form class="subscribe">
+        <input type="email" placeholder="you@example.com" required>
+        <div class="checkbox-row">
+          <input id="sub-stable-main" type="checkbox" checked>
+          <label for="sub-stable-main" class="pill-muted">Stable</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-beta-main" type="checkbox">
+          <label for="sub-beta-main" class="pill-muted">Beta</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-nightly-main" type="checkbox">
+          <label for="sub-nightly-main" class="pill-muted">Nightly</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-tips-main" type="checkbox" checked>
+          <label for="sub-tips-main" class="pill-muted">Tips / Guides</label>
+        </div>
+        <button class="btn btn-primary interactive" type="submit">Подписаться</button>
+      </form>
+      <p class="pill-muted" style="margin-top:8px;">Без спама. Отписка в один клик.</p>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section__header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="accordion">
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Как проходит установка?</span>
+          <span class="icon">+</span>
+          <p>Скачайте установщик, подтвердите цифровую подпись Xenon Labs и следуйте шагам мастера. Проверка хэша встроена.</p>
+        </button>
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Нужен ли чистый BlueStacks?</span>
+          <span class="icon">+</span>
+          <p>Нет, Xenon ставится отдельно. При обнаружении конфликтующих драйверов вы получите подсказку с безопасным решением.</p>
+        </button>
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Как обновляться?</span>
+          <span class="icon">+</span>
+          <p>Скачайте новую сборку, профили настроек сохранятся автоматически.</p>
+        </button>
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Что с приватностью?</span>
+          <span class="icon">+</span>
+          <p>Никаких телеметрий и рекламных SDK. Логи хранятся локально и легко очищаются из панели Control Hub.</p>
+        </button>
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Почему может не запускаться?</span>
+          <span class="icon">+</span>
+          <p>Чаще всего мешает включённый Hyper-V/WSL2. Отключите Hyper-V или включите совместимость в настройках Xenon.</p>
+        </button>
+        <button class="accordion__item interactive" aria-expanded="false">
+          <span>Поддерживается ли стриминг?</span>
+          <span class="icon">+</span>
+          <p>Да. Рекомендованы 16 ГБ ОЗУ и GPU с поддержкой аппаратного кодирования H.264/H.265.</p>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <span class="logo">XENON</span>
+      <span>© 2026 Xenon Labs</span>
+      <div class="footer__links">
+        <a class="interactive" href="#">Privacy</a>
+        <a class="interactive" href="#">Terms</a>
+        <a class="interactive" href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="grain"></div>
+  <div class="exit-intent" id="exit-intent">
+    <div class="exit-card">
+      <button class="btn btn-ghost interactive close" id="exit-close">×</button>
+      <h3>Получать свежие релизы и фиксы?</h3>
+      <p class="pill-muted">Подпишись, чтобы не пропустить Stable/Beta/Nightly + советы.</p>
+      <form class="subscribe">
+        <input type="email" placeholder="you@example.com" required>
+        <div class="checkbox-row">
+          <input id="exit-stable" type="checkbox" checked>
+          <label for="exit-stable" class="pill-muted">Stable</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="exit-beta" type="checkbox">
+          <label for="exit-beta" class="pill-muted">Beta</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="exit-nightly" type="checkbox">
+          <label for="exit-nightly" class="pill-muted">Nightly</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="exit-tips" type="checkbox" checked>
+          <label for="exit-tips" class="pill-muted">Tips / Guides</label>
+        </div>
+        <button class="btn btn-primary interactive" type="submit">Подписаться</button>
+      </form>
+      <p class="pill-muted" style="margin-top:8px;">Без спама. Отписка в один клик. Показываем не чаще раза в неделю.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

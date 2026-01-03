@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Энциклопедия ошибок</title>
+  <meta name="description" content="Энциклопедия решений Xenon: 500+ ошибок и симптомов, поиск по кодам, популярные проблемы, связанные гайды.">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://xenon-emulator.com/errors.html">
+  <meta property="og:title" content="Xenon Errors & Fixes">
+  <meta property="og:description" content="Поиск по кодам и симптомам, популярные проблемы и шаги решения.">
+  <meta property="og:url" content="https://xenon-emulator.com/errors.html">
+  <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Errors / Fixes</p>
+      <h1>Энциклопедия решений для Xenon</h1>
+      <p class="subtitle">500+ записей: коды ошибок, симптомы, причины и готовые шаги. Найдите проблему по ключевым словам или алфавиту.</p>
+    </section>
+
+    <section class="section errors-search">
+      <div class="errors-search__bar">
+        <input type="search" placeholder="Hyper-V, VT-x, black screen, 0xc000, failed to start" aria-label="Поиск по ошибкам">
+        <button class="btn btn-primary interactive" type="button">Искать</button>
+      </div>
+      <div class="alphabet">
+        <span>0-9</span>
+        <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+      </div>
+      <div class="filters">
+        <div class="chip">Категории: Launch / Performance / Graphics / Network / Install</div>
+        <div class="chip">Уровень: Easy / Medium / Advanced</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Популярные проблемы</p>
+        <h2>Топ запросов</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card list-card--glow">
+          <div class="row"><span class="badge badge--stable">Launch</span><span class="badge badge--purple">Easy</span></div>
+          <h3>Black Screen on Launch</h3>
+          <p>Экран остаётся чёрным после старта.</p>
+          <a class="interactive" href="error-black-screen.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <div class="row"><span class="badge">Install</span><span class="badge badge--stable">Medium</span></div>
+          <h3>VT-x disabled</h3>
+          <p>Виртуализация отключена в BIOS/UEFI.</p>
+          <a class="interactive" href="error-vtx.html">Открыть</a>
+        </div>
+        <div class="list-card list-card--glow">
+          <div class="row"><span class="badge">Performance</span><span class="badge badge--stable">Easy</span></div>
+          <h3>Hyper-V conflict</h3>
+          <p>Включён Hyper-V мешает запуску.</p>
+          <a class="interactive" href="error-hyperv.html">Открыть</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="section__header">
+        <p class="eyebrow">Частые причины</p>
+        <h2>Что чаще всего ломает Xenon</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card">
+          <h3>Виртуализация</h3>
+          <p class="pill-muted">VT-x/AMD-V, Hyper-V, WSL2.</p>
+        </div>
+        <div class="list-card">
+          <h3>Драйверы GPU</h3>
+          <p class="pill-muted">Старые версии или конфликтующие пакеты.</p>
+        </div>
+        <div class="list-card">
+          <h3>Права/антивирус</h3>
+          <p class="pill-muted">Блокировка установщика или файлов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">База ошибок</p>
+        <h2>500+ записей</h2>
+      </div>
+      <div class="grid two">
+        <div class="list-card">
+          <h3>Failed to start (0xc000…)</h3>
+          <p class="pill-muted">Launch · Medium</p>
+          <a class="interactive" href="error-black-screen.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Graphics device not found</h3>
+          <p class="pill-muted">Graphics · Advanced</p>
+          <a class="interactive" href="error-black-screen.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Network timeout</h3>
+          <p class="pill-muted">Network · Medium</p>
+          <a class="interactive" href="error-black-screen.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Installer blocked by AV</h3>
+          <p class="pill-muted">Install · Easy</p>
+          <a class="interactive" href="error-black-screen.html">Открыть</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

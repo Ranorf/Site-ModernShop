@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Инструменты диагностики</title>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://xenon-emulator.com/tools.html">
+  <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Tools / Diagnostics</p>
+      <h1>Инструменты диагностики Xenon</h1>
+      <p class="subtitle">Квиз-воркфлоу, которые помогают оценить совместимость, выбрать настройки и устранить проблемы. Результаты можно сохранить и поделиться.</p>
+    </section>
+
+    <section class="section">
+      <div class="bento features__grid">
+        <div class="card card--mini">
+          <div class="badge badge--stable">~2 мин · 6 шагов</div>
+          <h3>Проверка совместимости Xenon</h3>
+          <p>OS, виртуализация, драйверы, место на диске, права.</p>
+          <a class="btn btn-primary interactive" href="tool-compatibility.html">Запустить</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge badge--new">~3 мин · 7 шагов</div>
+          <h3>Подбор оптимальных настроек</h3>
+          <p>RAM/CPU, FPS cap, рендерер, режим производительности.</p>
+          <a class="btn btn-primary interactive" href="tool-settings.html">Запустить</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge badge--purple">~3 мин · 6 шагов</div>
+          <h3>Диагностика лагов и фризов</h3>
+          <p>Симптомы → причины → действия и quick fix.</p>
+          <a class="btn btn-primary interactive" href="tool-lag.html">Запустить</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge">~2 мин · 5 шагов</div>
+          <h3>Диагностика проблем запуска</h3>
+          <p>Ошибки, чёрный экран, Hyper-V/драйверы.</p>
+          <a class="btn btn-primary interactive" href="tool-launch.html">Запустить</a>
+        </div>
+        <div class="card card--mini">
+          <div class="badge badge--stable">~1 мин · 4 шага</div>
+          <h3>Выбор режима</h3>
+          <p>Gaming / Balanced / Minimal под ваши задачи.</p>
+          <a class="btn btn-primary interactive" href="tool-modes.html">Запустить</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

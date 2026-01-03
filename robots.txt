@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: /admin-newsletter.html
+Disallow: /profile
+Allow: /
+
+Sitemap: https://xenon-emulator.com/sitemap.xml

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon Tips — FPS & Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">FPS & Performance</p>
+      <h1>Стабильный FPS в Xenon</h1>
+      <p class="subtitle">Советы и пресеты для максимальной плавности. Форматы: Today / Week / Month / Preset.</p>
+    </section>
+
+    <section class="section">
+      <div class="format-tabs" data-format-group>
+        <button class="btn btn-ghost interactive active" data-format-target="today">Today</button>
+        <button class="btn btn-ghost interactive" data-format-target="week">Week</button>
+        <button class="btn btn-ghost interactive" data-format-target="month">Month</button>
+        <button class="btn btn-primary interactive" data-format-target="preset">Preset</button>
+      </div>
+
+      <div class="format-panel" data-format-panel="today">
+        <div class="list-card">
+          <h3>Tip of the Day</h3>
+          <p>Включите Vulkan и ограничьте FPS до 120, если ноутбук троттлит. Отключите Discord/Steam оверлеи.</p>
+        </div>
+      </div>
+
+      <div class="format-panel hidden" data-format-panel="week">
+        <div class="list-card">
+          <h3>Weekly Optimization Pack</h3>
+          <ul>
+            <li>Обновите GPU драйверы.</li>
+            <li>Переключите энергоплан в High Performance.</li>
+            <li>Очистите кеш Xenon и игр.</li>
+            <li>Поставьте FPS cap 120/144.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="format-panel hidden" data-format-panel="month">
+        <div class="list-card">
+          <h3>Monthly Best Picks</h3>
+          <p>Лучшие игры месяца: Arena FPS, MOBA, Open World.</p>
+          <p class="pill-muted">Рекомендуемые настройки: Renderer Vulkan, Anti-lag On, V-Sync On.</p>
+        </div>
+      </div>
+
+      <div class="format-panel hidden" data-format-panel="preset">
+        <div class="list-card">
+          <h3>Gaming Mode Preset</h3>
+          <p>CPU: 4 ядра · RAM: 6 ГБ · Renderer: Vulkan · FPS cap: 120 · Режим: Gaming</p>
+          <div class="row" style="margin-top:10px;">
+            <a class="btn btn-primary interactive" href="download.html">Скачать Xenon</a>
+            <a class="btn btn-ghost interactive" href="docs.html">Открыть гайд</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-card" style="margin-top:16px;">
+        <h3>Рекомендуемые настройки Xenon</h3>
+        <p>CPU: 4 ядра · RAM: 6–8 ГБ · Renderer: Vulkan · FPS cap: 120</p>
+      </div>
+
+      <div class="list-card" style="margin-top:12px;">
+        <h3>Частые ошибки по теме</h3>
+        <ul>
+          <li><a class="interactive" href="docs-troubleshooting.html">Статтеры при включённом Hyper-V</a></li>
+          <li><a class="interactive" href="docs-troubleshooting.html">Чёрный экран при запуске</a></li>
+          <li><a class="interactive" href="docs-troubleshooting.html">Падение FPS после обновления драйвера</a></li>
+        </ul>
+      </div>
+
+      <div class="row" style="margin-top:14px;">
+        <a class="btn btn-primary interactive" href="download.html">Скачать Xenon</a>
+        <a class="btn btn-ghost interactive" href="docs.html">Docs по теме</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Читайте также</p>
+        <h2>Похожие материалы</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card">
+          <h3>Graphics & Renderer</h3>
+          <p class="pill-muted">Vulkan или DX11?</p>
+          <a class="interactive" href="tips-theme.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Network & Ping</h3>
+          <p class="pill-muted">Снизить пинг</p>
+          <a class="interactive" href="tips-theme.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Updates & Stability</h3>
+          <p class="pill-muted">Стабильные патчи</p>
+          <a class="interactive" href="tips-theme.html">Открыть</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>
