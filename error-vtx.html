@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VT-x disabled — Xenon Fix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main class="doc-layout">
+    <section class="doc-hero">
+      <div class="doc-hero__glow"></div>
+      <div>
+        <p class="pill">Install · Medium</p>
+        <h1>VT-x disabled</h1>
+        <div class="doc-meta">
+          <span class="chip">TL;DR: Включите виртуализацию в BIOS/UEFI</span>
+          <span class="chip">Категория: Launch/Install</span>
+        </div>
+        <div class="row" style="margin-top:12px;">
+          <button class="btn btn-ghost interactive">Like</button>
+          <button class="btn btn-ghost interactive">Bookmark</button>
+          <button class="btn btn-primary interactive">Share</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-body">
+      <article class="doc-content">
+        <h2>Коротко</h2>
+        <p>Виртуализация (VT-x/AMD-V) отключена на уровне прошивки, Xenon не может запуститься.</p>
+
+        <h2>Почему это происходит</h2>
+        <p>Настройки BIOS/UEFI блокируют аппаратную виртуализацию или Hyper-V перехватывает VT-x.</p>
+
+        <h2>Пошаговое решение</h2>
+        <ol>
+          <li>Перезагрузитесь в BIOS/UEFI и включите Intel VT-x или AMD-V.</li>
+          <li>Сохраните изменения, перезагрузитесь.</li>
+          <li>В Windows отключите Hyper-V/WSL2 или включите совместимость в Xenon.</li>
+          <li>Проверьте, что Device Guard/Memory Integrity отключены.</li>
+          <li>Запустите Xenon от имени администратора.</li>
+        </ol>
+
+        <h2>Если не помогло</h2>
+        <ul>
+          <li>Обновите BIOS/UEFI до последней версии.</li>
+          <li>Сбросьте параметры BIOS к стандартным и включите VT-x заново.</li>
+          <li>Используйте portable-режим для проверки.</li>
+        </ul>
+
+        <div class="quick-actions">
+          <a class="btn btn-primary interactive" href="download.html">Скачать Xenon</a>
+          <a class="btn btn-ghost interactive" href="docs-troubleshooting.html">Открыть Docs</a>
+          <a class="btn btn-ghost interactive" href="tools.html">Запустить диагностику</a>
+        </div>
+
+        <h3>Связанные проблемы</h3>
+        <ul>
+          <li><a class="interactive" href="error-hyperv.html">Hyper-V conflict</a></li>
+          <li><a class="interactive" href="error-black-screen.html">Black Screen on Launch</a></li>
+        </ul>
+      </article>
+
+      <aside class="doc-toc">
+        <h4>Следующая популярная</h4>
+        <ul>
+          <li><a class="interactive" href="error-hyperv.html">Hyper-V conflict</a></li>
+        </ul>
+        <h4>Фильтры</h4>
+        <ul>
+          <li>Категория: Install</li>
+          <li>Уровень: Medium</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

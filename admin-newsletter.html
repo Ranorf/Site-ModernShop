@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Newsletter Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-auth="signed-in">
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>admin</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="admin-newsletter.html">Newsletter admin</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Admin</p>
+      <h1>Email-рассылка Xenon</h1>
+      <p class="subtitle">Подписчики, сегменты, создание и отправка писем.</p>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Подписчики</p>
+        <h2>Список подписчиков</h2>
+      </div>
+      <table class="table-like">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Дата</th>
+            <th>Подтверждён</th>
+            <th>Интересы</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>user@example.com</td>
+            <td>12.04.2026</td>
+            <td>Да</td>
+            <td>Stable, Tips</td>
+            <td>Главная</td>
+          </tr>
+          <tr>
+            <td>beta@test.com</td>
+            <td>10.04.2026</td>
+            <td>Нет</td>
+            <td>Beta</td>
+            <td>Docs</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row" style="margin-top:12px;">
+        <button class="btn btn-ghost interactive" type="button">Фильтр confirmed</button>
+        <button class="btn btn-ghost interactive" type="button">Фильтр каналов</button>
+        <button class="btn btn-ghost interactive" type="button">Экспорт CSV</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Создать письмо</p>
+        <h2>Новая рассылка</h2>
+      </div>
+      <div class="list-card">
+        <form class="grid">
+          <label>Тема письма <input type="text" placeholder="Xenon 1.5.0 Beta — новое обновление"></label>
+          <label>Прехедер <input type="text" placeholder="3 ключевых улучшения + кнопка скачать"></label>
+          <label>Audience
+            <select>
+              <option>Все подтверждённые</option>
+              <option>Только Stable</option>
+              <option>Только Beta</option>
+              <option>Только Nightly</option>
+              <option>Только Tips/Guides</option>
+            </select>
+          </label>
+          <label>Текст письма
+            <textarea rows="6" placeholder="Markdown/простой редактор: заголовки, списки, ссылки, кнопки."></textarea>
+          </label>
+          <div class="row">
+            <button class="btn btn-ghost interactive" type="button">Тестовая отправка</button>
+            <button class="btn btn-primary interactive" type="button">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="section__header" style="margin-top:24px;">
+        <p class="eyebrow">Лог отправок</p>
+        <h2>История</h2>
+      </div>
+      <table class="table-like">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Сегмент</th>
+            <th>Отправлено</th>
+            <th>Ошибки</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09.04.2026</td>
+            <td>Stable</td>
+            <td>12,340</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>01.04.2026</td>
+            <td>Monthly Digest</td>
+            <td>28,900</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

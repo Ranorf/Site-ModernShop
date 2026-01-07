@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Вход</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Account</p>
+      <h1>Вход в Xenon</h1>
+      <p class="subtitle">Используйте email + пароль или Google OAuth. После входа доступен профиль, закладки и история скачиваний.</p>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <div class="list-card">
+          <h3>Войти</h3>
+          <form>
+            <div>
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="login-password">Пароль</label>
+              <input id="login-password" name="password" type="password" placeholder="••••••••" required>
+            </div>
+            <div class="checkbox-row">
+              <input id="remember" type="checkbox" name="remember">
+              <label for="remember" class="pill-muted">Запомнить меня</label>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary interactive" type="submit">Войти</button>
+              <a class="interactive" href="password-reset.html">Забыли пароль?</a>
+            </div>
+          </form>
+        </div>
+        <div class="list-card">
+          <h3>Быстрый вход</h3>
+          <p>Используйте Google OAuth для входа без пароля.</p>
+          <button class="btn btn-ghost interactive" type="button">Войти через Google</button>
+          <p class="pill-muted" style="margin-top:12px;">Регистрируясь, вы принимаете <a class="interactive" href="privacy.html">Privacy</a> и <a class="interactive" href="terms.html">Terms</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

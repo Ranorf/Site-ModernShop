@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon Docs — Установка и быстрый старт</title>
+  <meta name="description" content="Гайд по установке Xenon: подготовка, проверка подписи, шаги установки и команды SHA-256.">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://xenon-emulator.com/docs-article.html">
+  <meta property="og:title" content="Гайд по установке Xenon">
+  <meta property="og:description" content="Подготовка, проверка хэшей, пресеты установки и быстрый старт.">
+  <meta property="og:url" content="https://xenon-emulator.com/docs-article.html">
+  <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-auth="signed-in">
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main class="doc-layout">
+    <section class="doc-hero">
+      <div class="doc-hero__glow"></div>
+      <div>
+        <p class="pill">Install</p>
+        <h1>Установка Xenon за 5 минут</h1>
+        <div class="doc-meta">
+          <span class="chip">Обновлено: 12 марта 2026</span>
+          <span class="chip">Время чтения: 6 мин</span>
+          <span class="chip chip--purple">Просмотры: 8.2k</span>
+        </div>
+        <div class="row" style="margin-top:12px;">
+          <button class="btn btn-ghost interactive">Like</button>
+          <button class="btn btn-ghost interactive">Bookmark</button>
+          <button class="btn btn-primary interactive">Share</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-body">
+      <article class="doc-content">
+        <h2 id="prep">Подготовка</h2>
+        <p>Перед установкой убедитесь, что виртуализация включена, а драйверы GPU обновлены. Отключите Hyper-V или включите режим совместимости в Xenon.</p>
+        <div class="callout callout--info">
+          <strong>Info:</strong> Для стриминга рекомендуем 16 ГБ RAM и NVENC/AMF.
+        </div>
+
+        <h2 id="steps">Шаги установки</h2>
+        <ol>
+          <li>Скачайте подписанный установщик с <a class="interactive" href="download.html">страницы загрузки</a>.</li>
+          <li>Проверьте SHA-256 и цифровую подпись Xenon Labs.</li>
+          <li>Запустите установщик от имени администратора.</li>
+          <li>Выберите пресет: Performance / Balanced / Minimal.</li>
+        </ol>
+        <div class="callout callout--warning">
+          <strong>Warning:</strong> Если включён Hyper-V, возможны ошибки запуска. Отключите его или включите совместимость.
+        </div>
+
+        <h3 id="commands">Команды проверки хэша</h3>
+        <pre class="code-block"><code>certutil -hashfile xenon-setup.exe SHA256</code></pre>
+
+        <blockquote class="callout callout--tip">
+          <strong>Tip:</strong> Portable версия удобна для тестов — настройки можно хранить на отдельном диске.
+        </blockquote>
+
+        <img class="doc-image" src="https://dummyimage.com/900x360/0f1626/2df3ff&text=Xenon+install+flow" alt="Xenon install flow">
+
+        <h2 id="next">Что дальше?</h2>
+        <p>Перейдите к настройке графики и горячих клавиш. Используйте Control Hub для быстрого переключения пресетов.</p>
+
+        <div class="quick-actions">
+          <a class="btn btn-primary interactive" href="download.html">Открыть Download</a>
+          <a class="btn btn-ghost interactive" href="requirements.html">Перейти к Requirements</a>
+          <a class="btn btn-ghost interactive" href="faq.html">Открыть FAQ</a>
+        </div>
+      </article>
+
+      <aside class="doc-toc">
+        <h4>Оглавление</h4>
+        <ul>
+          <li><a class="interactive" href="#prep">Подготовка</a></li>
+          <li><a class="interactive" href="#steps">Шаги установки</a></li>
+          <li><a class="interactive" href="#commands">Команды проверки хэша</a></li>
+          <li><a class="interactive" href="#next">Что дальше?</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Комментарии</p>
+        <h2>Обсуждение</h2>
+      </div>
+      <div class="list-card">
+        <p class="pill-muted">Только для зарегистрированных. Без спама/оскорблений.</p>
+        <textarea rows="4" placeholder="Оставьте комментарий"></textarea>
+        <button class="btn btn-primary interactive" type="button">Отправить</button>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <div class="comment__avatar"></div>
+          <div class="comment__body">
+            <div class="row">
+              <strong>Iris Vega</strong>
+              <span class="pill-muted">12.03.2026</span>
+            </div>
+            <p>Установка заняла 3 минуты, подписанный инсталлятор внушает доверие.</p>
+            <div class="row comment__actions">
+              <button class="btn btn-ghost interactive">Ответить</button>
+              <button class="btn btn-ghost interactive">Пожаловаться</button>
+            </div>
+            <div class="comment comment--reply">
+              <div class="comment__avatar"></div>
+              <div class="comment__body">
+                <div class="row">
+                  <strong>Dima K</strong>
+                  <span class="pill-muted">13.03.2026</span>
+                </div>
+                <p>Подтверждаю, главное — проверить SHA-256.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Похожие гайды</p>
+        <h2>Читайте также</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card">
+          <h3>Обновление Xenon</h3>
+          <p class="pill-muted">Setup · 5 мин</p>
+          <a class="interactive" href="docs-update.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Troubleshooting</h3>
+          <p class="pill-muted">Ошибки запуска</p>
+          <a class="interactive" href="docs-troubleshooting.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Настройки графики</h3>
+          <p class="pill-muted">Performance tips</p>
+          <a class="interactive" href="docs.html">Открыть</a>
+        </div>
+      </div>
+      <div class="row" style="margin-top:12px;">
+        <a class="interactive" href="#">← Предыдущий гайд</a>
+        <a class="interactive" href="#">Следующий гайд →</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Подписка</p>
+        <h2>Хочешь получать новые релизы и фиксы?</h2>
+      </div>
+      <form class="subscribe">
+        <input type="email" placeholder="you@example.com" required>
+        <div class="checkbox-row">
+          <input id="sub-stable-doc" type="checkbox" checked>
+          <label for="sub-stable-doc" class="pill-muted">Stable</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-beta-doc" type="checkbox">
+          <label for="sub-beta-doc" class="pill-muted">Beta</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-nightly-doc" type="checkbox">
+          <label for="sub-nightly-doc" class="pill-muted">Nightly</label>
+        </div>
+        <button class="btn btn-primary interactive" type="submit">Подписаться</button>
+      </form>
+      <p class="pill-muted" style="margin-top:8px;">Без спама. Отписка в один клик.</p>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

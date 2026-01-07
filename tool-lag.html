@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Диагностика лагов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-auth="signed-in">
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Tool</p>
+      <h1>Диагностика лагов и фризов</h1>
+      <p class="subtitle">Симптомы → возможные причины → действия. Быстрый чеклист для стабильного FPS.</p>
+    </section>
+
+    <section class="section">
+      <div class="progress">
+        <div class="progress__bar" style="width: 60%;"></div>
+        <span class="progress__text">Шаг 4 из 6</span>
+      </div>
+
+      <div class="list-card">
+        <h3>Что происходит?</h3>
+        <div class="form-grid">
+          <label class="pill-muted"><input type="checkbox" checked> Фризы/статтеры</label>
+          <label class="pill-muted"><input type="checkbox"> Низкий FPS</label>
+          <label class="pill-muted"><input type="checkbox"> Подлагивания сети</label>
+        </div>
+      </div>
+
+      <div class="list-card" style="margin-top:12px;">
+        <h3>Приоритет</h3>
+        <div class="form-grid">
+          <label class="pill-muted"><input type="radio" name="priority-lag" checked> Стабильность</label>
+          <label class="pill-muted"><input type="radio" name="priority-lag"> FPS</label>
+          <label class="pill-muted"><input type="radio" name="priority-lag"> Минимальная нагрузка</label>
+        </div>
+      </div>
+
+      <div class="list-card" style="margin-top:12px;">
+        <h3>Какая GPU?</h3>
+        <div class="form-grid">
+          <label class="pill-muted"><input type="radio" name="gpu" checked> NVIDIA (NVENC)</label>
+          <label class="pill-muted"><input type="radio" name="gpu"> AMD (AMF)</label>
+          <label class="pill-muted"><input type="radio" name="gpu"> Intel</label>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:16px;">
+        <button class="btn btn-ghost interactive" type="button">Назад</button>
+        <button class="btn btn-primary interactive" type="button" onclick="window.location.href='tool-lag-result.html'">Далее</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

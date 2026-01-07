@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon 1.4.2 — Release</title>
+  <meta name="description" content="Xenon 1.4.2 Stable: улучшенный input lag, подписанные файлы, обновлённый Vulkan. Скачать installer или portable.">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://xenon-emulator.com/release-1.4.2.html">
+  <meta property="og:title" content="Xenon 1.4.2 — Stable Release">
+  <meta property="og:description" content="Оптимизация ввода, подписанные сборки, changelog и файлы загрузки." />
+  <meta property="og:url" content="https://xenon-emulator.com/release-1.4.2.html">
+  <script async defer src="https://analytics.xenon-emulator.com/script.js" data-website-id="UMAMI_SITE_ID"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Release</p>
+      <h1>Xenon v1.4.2</h1>
+      <div class="doc-meta">
+        <span class="chip badge--stable">Stable</span>
+        <span class="chip">Дата: 12 марта 2026</span>
+        <span class="chip chip--purple">Просмотры: 14.2k</span>
+        <span class="chip">Downloads: 48k</span>
+      </div>
+      <div class="row" style="margin-top:16px;">
+        <button class="btn btn-ghost interactive">Like</button>
+        <button class="btn btn-ghost interactive">Bookmark</button>
+        <button class="btn btn-primary interactive">Share</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <div class="list-card">
+          <h3>Описание</h3>
+          <p>Оптимизация ввода и чистый boot-процесс. Подписанный установщик и portable, обновлённый Vulkan стек.</p>
+        </div>
+        <div class="list-card">
+          <h3>Changelog</h3>
+          <h4>Added</h4>
+          <ul>
+            <li>Подписанные инсталляторы и mirrors.</li>
+            <li>Новый input capture модуль.</li>
+          </ul>
+          <h4>Improved</h4>
+          <ul>
+            <li>Сниженный input lag для популярных игр.</li>
+            <li>Оптимизированы пресеты Control Hub.</li>
+          </ul>
+          <h4>Fixed</h4>
+          <ul>
+            <li>Крэши Vulkan на драйверах март 2026.</li>
+            <li>Редкие вылеты при старте portable.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Скачать файлы</p>
+        <h2>Прямо со страницы релиза</h2>
+      </div>
+      <div class="grid two">
+        <div class="list-card">
+          <div class="row">
+            <strong>Installer</strong>
+            <span class="badge badge--stable">Stable</span>
+          </div>
+          <p>Windows · 420 МБ</p>
+          <p class="label">SHA-256</p>
+          <p class="subtitle" style="word-break: break-all;">8f1c2c1d9c41d2f0be1a705c5a9d87a5c842b613f9a7c2a0f5e4b0d48ef1a001</p>
+          <p class="pill-muted">Подпись: Xenon Labs · Зеркало доступно</p>
+          <div class="row">
+            <a class="btn btn-primary interactive" href="download.html">Download</a>
+            <a class="interactive" href="download.html">Зеркала</a>
+          </div>
+        </div>
+        <div class="list-card">
+          <div class="row">
+            <strong>Portable</strong>
+            <span class="badge badge--stable">Stable</span>
+          </div>
+          <p>Windows · 415 МБ</p>
+          <p class="label">SHA-256</p>
+          <p class="subtitle" style="word-break: break-all;">2d9b7ac8c99e5f8d3d3db67162f9a1e5a2349f6b4c3b0f9d3c6a81d19d5fbb02</p>
+          <p class="pill-muted">Подпись: Xenon Labs · Portable</p>
+          <div class="row">
+            <a class="btn btn-primary interactive" href="download.html">Download</a>
+            <a class="interactive" href="download.html">Проверка хэша</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Комментарии</p>
+        <h2>Обсуждение релиза</h2>
+      </div>
+      <div class="list-card">
+        <p class="pill-muted">Только для зарегистрированных. Без спама/оскорблений.</p>
+        <textarea rows="4" placeholder="Оставьте комментарий"></textarea>
+        <button class="btn btn-primary interactive" type="button">Отправить</button>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <div class="comment__avatar"></div>
+          <div class="comment__body">
+            <div class="row">
+              <strong>Iris Vega</strong>
+              <span class="pill-muted">12.03.2026</span>
+            </div>
+            <p>Input lag реально стал меньше на RTX 3060.</p>
+            <div class="row comment__actions">
+              <button class="btn btn-ghost interactive">Ответить</button>
+              <button class="btn btn-ghost interactive">Пожаловаться</button>
+            </div>
+            <div class="comment comment--reply">
+              <div class="comment__avatar"></div>
+              <div class="comment__body">
+                <div class="row">
+                  <strong>Moderator</strong>
+                  <span class="pill-muted">13.03.2026</span>
+                </div>
+                <p>Спасибо за фидбек, фиксируем как стабильное улучшение.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Похожие релизы</p>
+        <h2>В том же канале</h2>
+      </div>
+      <div class="grid three">
+        <div class="list-card">
+          <h3>Xenon 1.4.0</h3>
+          <p class="pill-muted">Stable · Control Hub</p>
+          <a class="interactive" href="releases.html">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Xenon 1.5.0 Beta</h3>
+          <p class="pill-muted">Beta · Vulkan 2</p>
+          <a class="interactive" href="releases.html#beta">Открыть</a>
+        </div>
+        <div class="list-card">
+          <h3>Xenon 1.6.0 Nightly</h3>
+          <p class="pill-muted">Nightly · Trace overlay</p>
+          <a class="interactive" href="releases.html#nightly">Открыть</a>
+        </div>
+      </div>
+      <div class="row" style="margin-top:12px;">
+        <a class="interactive" href="#">← Предыдущий релиз</a>
+        <a class="interactive" href="#">Следующий релиз →</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <p class="eyebrow">Подписка</p>
+        <h2>Хочешь получать новые релизы и фиксы?</h2>
+      </div>
+      <form class="subscribe">
+        <input type="email" placeholder="you@example.com" required>
+        <div class="checkbox-row">
+          <input id="sub-stable-release" type="checkbox" checked>
+          <label for="sub-stable-release" class="pill-muted">Stable</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-beta-release" type="checkbox">
+          <label for="sub-beta-release" class="pill-muted">Beta</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-nightly-release" type="checkbox">
+          <label for="sub-nightly-release" class="pill-muted">Nightly</label>
+        </div>
+        <div class="checkbox-row">
+          <input id="sub-tips-release" type="checkbox">
+          <label for="sub-tips-release" class="pill-muted">Tips / Guides</label>
+        </div>
+        <button class="btn btn-primary interactive" type="submit">Подписаться</button>
+      </form>
+      <p class="pill-muted" style="margin-top:8px;">Без спама. Отписка в один клик.</p>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>

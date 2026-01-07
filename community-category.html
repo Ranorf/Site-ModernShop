@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenon — Категория форума</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <header class="site-header" id="site-header">
+    <div class="logo">XENON</div>
+    <nav class="nav">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="interactive" href="about.html">About</a>
+      <div class="auth auth-guest">
+        <a class="nav-btn interactive" href="login.html">Войти</a>
+        <a class="interactive" href="register.html">Регистрация</a>
+      </div>
+      <div class="auth auth-user">
+        <button class="user-toggle interactive" id="user-toggle">
+          <img class="user-avatar" src="https://cdn.xenon.dev/avatars/iris.png" alt="avatar">
+          <span>iris</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <a class="interactive" href="profile.html">Profile</a>
+          <a class="interactive" href="bookmarks.html">Bookmarks</a>
+          <a class="interactive" href="download-history.html">Download history</a>
+          <a class="interactive" href="admin.html">Admin panel</a>
+          <a class="interactive" href="logout.html">Logout</a>
+        </div>
+      </div>
+      <button class="nav-toggle interactive" id="nav-toggle"><span></span></button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a class="interactive" href="download.html">Download</a>
+      <a class="interactive" href="releases.html">Releases</a>
+      <a class="interactive" href="requirements.html">Requirements</a>
+      <a class="interactive" href="docs.html">Docs</a>
+      <a class="interactive" href="faq.html">FAQ</a>
+      <a class="interactive" href="support.html">Support</a>
+      <a class="interactive" href="about.html">About</a>
+      <a class="interactive" href="login.html">Войти</a>
+      <a class="interactive" href="register.html">Регистрация</a>
+      <a class="interactive" href="profile.html">Profile</a>
+      <a class="interactive" href="download-history.html">Download history</a>
+      <a class="interactive" href="bookmarks.html">Bookmarks</a>
+      <a class="interactive" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="pill">Category</p>
+      <h1>Help & Troubleshooting</h1>
+      <p class="subtitle">Ошибки, запуск, краши. Фильтры New / Hot / Unanswered.</p>
+      <div class="row" style="margin-top:12px;">
+        <button class="btn btn-ghost interactive">New</button>
+        <button class="btn btn-ghost interactive">Hot</button>
+        <button class="btn btn-ghost interactive">Unanswered</button>
+        <a class="btn btn-primary interactive" href="community-new-topic.html">Создать тему</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <table class="table-like">
+        <thead>
+          <tr>
+            <th>Тема</th>
+            <th>Автор</th>
+            <th>Ответы</th>
+            <th>Просмотры</th>
+            <th>Активность</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a class="interactive" href="community-topic.html">Чёрный экран после установки</a> <span class="badge">bug</span> <span class="badge badge--purple">launch</span></td>
+            <td>Iris</td>
+            <td>18</td>
+            <td>1.2k</td>
+            <td>2ч назад</td>
+          </tr>
+          <tr>
+            <td><a class="interactive" href="community-topic.html">Hyper-V конфликт</a> <span class="badge">hyper-v</span></td>
+            <td>Dima</td>
+            <td>24</td>
+            <td>2.1k</td>
+            <td>5ч назад</td>
+          </tr>
+          <tr>
+            <td><a class="interactive" href="community-topic.html">VT-x выключен в BIOS</a> <span class="badge">install</span></td>
+            <td>Alex</td>
+            <td>9</td>
+            <td>800</td>
+            <td>1д назад</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div class="grain"></div>
+  <script src="script.js"></script>
+</body>
+</html>
